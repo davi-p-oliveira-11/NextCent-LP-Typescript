@@ -1,4 +1,6 @@
-export const navbarContent = {
+import { NavbarContent } from "@/types/navbar";
+
+export const navbarContent: NavbarContent = {
   logo: "",
   links: [
     { label: "Home", href: "/" },
