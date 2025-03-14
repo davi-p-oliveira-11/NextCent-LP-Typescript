@@ -1,7 +1,5 @@
 import React from "react";
 
-const Services = () => {
+export function Services() {
   return <div>Services</div>;
-};
-
-export default Services;
+}
