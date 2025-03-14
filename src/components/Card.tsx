@@ -1,7 +1,5 @@
 import React from "react";
 
-const Card = () => {
-  return <div>Card</div>;
-};
-
-export default Card;
+export function Card() {
+  return <div>Button</div>;
+}
