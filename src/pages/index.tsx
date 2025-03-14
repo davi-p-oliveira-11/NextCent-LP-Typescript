@@ -1,24 +1,24 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import "../styles/globals.css";
 
-import { Navbar } from "../components";
-import { Hero } from "@/sections";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Navbar, Footer } from "../components";
+import { Hero, Clients, Services } from "@/sections";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Hero />
+      <header>
+        <Navbar />
+      </header>
+
+      <main className="max-w-[1240px] mx-auto px-5 py-8 md:py-0">
+        <Hero />
+        <Clients />
+        <Services />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
