@@ -1,7 +1,5 @@
 import React from "react";
 
-const Hero = () => {
+export function Hero() {
   return <div>Hero</div>;
-};
-
-export default Hero;
+}
