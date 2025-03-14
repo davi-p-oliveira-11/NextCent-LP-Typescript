@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* colors */
+  --color-black: #263238;
+  --d-grey: #4d4d4d;
+  --grey: #717171;
+  --l-grey: #89939e;
+  --grey-blue: #abbed1;
+  --silver: #f5f7fa;
+  --white: #ffffff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-color: #28cb8b;
+  --secondary-color: #263238;
+  --info-blue: #2194f3;
+
+  --green-shade-1: #43a046;
+  --green-shade-2: #388e3b;
+  --green-shade-3: #237d31;
+  --green-shade-4: #1b5e1f;
+  --green-shade-5: #103e13;
+
+  --tint-1: #66bb69;
+  --tint-2: #81c7b4;
+  --tint-3: #a5d6a7;
+  --tint-4: #c8e6c9;
+  --tint-5: #e8f5e9;
+
+  --warning: #f8c02d;
+  --error: #e53835;
+  --success: #2e7d31;
+  
+  /* shadows */
+  --shadow-1: box-shadow: 0px 2px 4px rgba(171, 190, 209, 0.6);
+  --shadow-2: box-shadow: 0px 4px 4px rgba(171, 190, 209, 0.4);
+  --shadow-3: box-shadow: 0px 6px 4px rgba(171, 190, 209, 0.3);
+  --shadow-4: box-shadow: 0px 8px 4px rgba(171, 190, 209, 0.4);
+  --shadow-5: box-shadow: 0px 16px 4px rgba(171, 190, 209, 0.3);
+
+  /* fonts */
+  --font-primary: var(--font-roboto);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary), sans-serif;
 }
